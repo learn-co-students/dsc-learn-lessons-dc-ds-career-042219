@@ -68,10 +68,17 @@ You'll be redirected to your new personal copy of the repository:
 * Type: **git clone** and paste your repo url (**cmd + v**)
 * Et Voila! The repository and all of its contents will be downloaded locally to your computer!
 * Remember that we then need to **cd** into the new repository once we've downloaded it
+* Our next step is to open our jupyter notebook locally (or *not on learn*) using the command line
 
 ## Jupyter Notebook
 
 So, now that we understand a bit about how to use our terminal and how to clone github repositories from our learn lessons, we should talk about the jupyter notebooks that will run most of the content in this course.
+
+First step is to type `jupyter notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember we want to be in the github repo directory that we just downloaded*). 
+
+> **Note:** *To stop a jupyter notebook, go to your command line where the notebook is running and press the **control** key + the letter **C*** (**`ctrl`**+**`c`**).
+
+Second step is to click on the `index.ipynb` file which is the jupyter notebook we will be using in this and future labs and lessons. This will open a new tab where we will see the same content from learn!
 
 ### Jupyter Background
 
