@@ -1,13 +1,18 @@
 
 # Working with Lessons on Learn
 
+## Introduction
+
+This lesson will give you practice with the workflow we're using for the rest of the course and will give you some hands on practice with important tools that you will need to be familiar with as a professional data scientist: the command line, git, GitHub and Jupyter Notebook.
+
 ## Objectives
-* Make changes to a jupyter notebook and push it up to GitHub
+You will be able to:
+* Make changes to a Jupyter Notebook and push it up to GitHub
 * Perform basic computations in a Jupyter Notebook and store them in a variable
 
 ## The Command Line
 
-Before we get into Data Science and Jupyter Notebooks, we'll need to know a tiny bit about our command line. When conducting data science (or programming in general), its helpful to get orientated with the command line. On mac computers, this is the terminal application. The command line serves as a low level interpreter through which you, the user, can send commands directly to the computer. As a computer user, you previously have probably sent commands to the computer through a graphical user interface (GUI) such as a web browser, text editor, photo editor, or any other of the myriad of computer programs now in existence. While the command line is initially daunting with its cryptic looking text, we will quickly see some of the many advantages it can have.
+Before we get into Data Science and Jupyter Notebooks, we'll need to know a tiny bit about our command line. When conducting data science (or programming in general), it's important to get comfortable with the command line. On Mac computers, this is the terminal application. On Windows computers, we'll use "Git Bash". The command line serves as a low level interpreter through which you, the user, can send commands directly to the computer. As a computer user, you previously have probably sent commands to the computer through a graphical user interface (GUI) such as a web browser, text editor, photo editor, or any other of the myriad of computer programs now in existence. While the command line is initially daunting with its cryptic looking text, we will quickly see some of the many advantages it can have.
 
 ## Cloning Learn.co lessons to your local hard drive
 One of the many useful features of the command line will be using git to clone local copies of the curriculum hosted on learn.co. This will allow you to work offline and save changes as you work through exercises and start programming!
@@ -34,7 +39,7 @@ Continuing with navigating the computer's hard drive, it's useful to now how to 
 
 You can also pass optional parameters to ls such as **ls -a** which list **all files** (including hidden files), **ls -l** which will give a **long listing** of files (including file size and last edit times) or you can pass multiple parameters simultaneously such as **ls -al** to produce a detailed listing of all files.
 
-## * the wildcard paramter
+## * the wildcard parameter
 
 Also very useful is the wildcard paramter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls .txt`**.
 
@@ -42,19 +47,19 @@ Also very useful is the wildcard paramter. For example, if you wanted to list al
 
 Finally, as you continue to navigate the file directory from the command line it can be useful to be able to create new folders. To do this, use the **mkdir** command, which stands for **make directory**. Try it out with **mkdir NewFolderName**. Afterwards, use the **ls** command to see that there is indeed a new folder, and if you wish, move into the new folder using the **cd** command.
 
-# Cloning github repos and Learn.co lessons
+# Cloning GitHub repositories and Learn.co lessons
 
 Now that you can navigate the file directory using the command line, you're ready to download some course materials from the web to your local environment.  
 
 * Create a folder on your computer for your course materials and navigate into it. 
-* Then create a subfolder titled "Day1" (or something similar) and navigate into that.
+* Then create a subfolder titled "section01" and navigate into that.
 
 * Return to your web browser and navigate to the lesson you want to download.
-* Click the github icon
+* Click the GitHub icon
 
 <img src="Learn_Github_Logo.png">
 
-You'll be redirected to the associated github repository like this.  
+You'll be redirected to the associated GitHub repository like this.  
 * **Click the fork button**, as shown in order to create a copy to your personal account which you can edit and update.
 <img src="Github_Fork_Button.png">
 
@@ -63,22 +68,22 @@ After a moment of this:
 You'll be redirected to your new personal copy of the repository:
 <img src="Forked_Github_Page.png" width=700>
 ## Finally: 
-* Press **cmd+L** to highlight the url bar and **cmd+c** to copy the url
-* Return to terminal (you should be in your "Day1" folder)
+* Press **cmd+L** to highlight the url bar and **cmd+c** to copy the url (whenever we use `cmd` to refer to holding down the command key on a Mac computer, on a Windows computer, hold down the control key instead)
+* Return to the terminal (you should be in your "section01" folder)
 * Type: **git clone** and paste your repo url (**cmd + v**)
 * Et Voila! The repository and all of its contents will be downloaded locally to your computer!
 * Remember that we then need to **cd** into the new repository once we've downloaded it
-* Our next step is to open our jupyter notebook locally (or *not on learn*) using the command line
+* Our next step is to open our Jupyter Notebook locally (or *not on learn*) using the command line
 
 ## Jupyter Notebook
 
-So, now that we understand a bit about how to use our terminal and how to clone github repositories from our learn lessons, we should talk about the jupyter notebooks that will run most of the content in this course.
+So, now that we understand a bit about how to use our terminal and how to clone github repositories from our learn lessons, we should talk about the Jupyter Notebooks that will run most of the content in this course.
 
-First step is to type `jupyter notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember we want to be in the github repo directory that we just downloaded*). 
+First step is to type `Jupyter Notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember we want to be in the github repo directory that we just downloaded*). 
 
-> **Note:** *To stop a jupyter notebook, go to your command line where the notebook is running and press the **control** key + the letter **C*** (**`ctrl`**+**`c`**).
+> **Note:** *To stop a Jupyter Notebook, go to your command line where the notebook is running and press the **control** key + the letter **C*** (**`ctrl`**+**`c`**).
 
-Second step is to click on the `index.ipynb` file which is the jupyter notebook we will be using in this and future labs and lessons. This will open a new tab where we will see the same content from learn!
+Second step is to click on the `index.ipynb` file which is the Jupyter Notebook we will be using in this and future labs and lessons. This will open a new tab where we will see the same content from learn!
 
 ### Jupyter Background
 
@@ -189,7 +194,7 @@ None
 
 ### Working through labs and readmes 
 
-As you read through labs we encourage you to press shift + enter on each of the Python cells.  Often in labs, we will assign variables to data early on.  Then we will ask you to work with data stored in those variables.  To avoid going to the top of the lab to press `shift + enter`, it's best just to press that while reading along. 
+As you read through labs we encourage you to press shift + enter on each of the Python cells that contains code.  Often in labs, we will assign variables to data early on.  Then we will ask you to work with data stored in those variables.  To avoid going to the top of the lab to press `shift + enter`, it's best just to press that while reading along. 
 
 The same thing goes for working through a Readme.  The Readmes will often assign data to variables, and it may be nice to work with data stored in those variables later on.  So it's a good idea to press `shift + enter`, and now that you know how to work with Jupyter notebooks, you can always modify the notebooks with new code to test your understanding.
 
