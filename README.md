@@ -16,7 +16,7 @@ There are two types of lessons on learn - readme's where you are mainly reading 
 
 However, there are some lessons that require you to write code - projects and labs. Generally labs are a little smaller and better specified, allowing you to practice a specific skill in isolation (like practicing throwing the ball up without hitting it to improve your tennis serve). Generally projects come towards the end of a section and are more open ended, allowing you to bring together a range of different skills that you have learned (like playing a whole game of tennis - or at least practicing a complete serve).
 
-It's easy to tell from a lessons title if it is a project, a lab or a readme. If the title ends with " - Lab", it's a lab,. If the title starts with the word "Project", it's a project. If neither of those two things is true, it's a readme!
+It's easy to tell from a lessons title if it is a project, a lab or a readme. If the title ends with " - Lab", it's a lab. If the title starts with the word "Project", it's a project. If neither of those two things is true, it's a readme!
 
 **The process we're teaching you below is only required for labs and projects - not readme's**
 
@@ -74,23 +74,25 @@ You'll be redirected to the associated GitHub repository like this.
 * **Click the fork button**, as shown in order to create a copy to your personal account which you can edit and update.
 <img src="Github_Fork_Button.png">
 
-After a moment of this:
+One of two things will happen. Either it'll pop up a modal (window) and if you scroll to the bottom of it you'll see it says that you already have a fork. That is qiuite possible - learn auto-forks certain lesssons for you. If that's the case, just click on the link to view your existing fork.
+
+If you don't already have a fork, after a moment of this:
 <img src="Github_Forking_In_Progress.png" width=350>
 You'll be redirected to your new personal copy of the repository:
 <img src="Forked_Github_Page.png" width=700>
 ## Finally: 
 * Press **cmd+L** to highlight the url bar and **cmd+c** to copy the url (whenever we use `cmd` to refer to holding down the command key on a Mac computer, on a Windows computer, hold down the control key instead)
 * Return to the terminal (you should be in your "section01" folder)
-* Type: **git clone** and paste your repo url (**cmd + v**)
+* Type: **git clone** and paste your repo url (**cmd + v** - in windows, in git bash, to paste from the clipboard the shortcut should be `ctrl-shift-insert`)
 * Et Voila! The repository and all of its contents will be downloaded locally to your computer!
 * Remember that we then need to **cd** into the new repository once we've downloaded it
 * Our next step is to open our Jupyter Notebook locally (**not on learn**) using the command line
 
 ## Jupyter Notebook
 
-So, now that we understand a bit about how to use our terminal and how to clone github repositories from our learn lessons, we should talk about the Jupyter Notebooks that will run most of the content in this course.
+So, now that we understand a bit about how to use our terminal and how to clone GitHub repositories from our learn lessons, we should talk about the Jupyter Notebooks that will run most of the content in this course.
 
-First step is to type `jupyter notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember we want to be in the GitHub repo directory that we just downloaded*). 
+Make sure to activate your conda virtual environment in your terminal first by typing `source activate learn-env`. Then type `jupyter notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember we want to be in the GitHub repo directory that we just downloaded*). 
 
 > **Note:** *To stop a Jupyter Notebook, go to your command line where the notebook is running and press the **control** key + the letter **C*** (**`ctrl`**+**`c`**).
 
