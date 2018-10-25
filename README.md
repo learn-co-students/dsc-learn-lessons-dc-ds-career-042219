@@ -52,7 +52,7 @@ You can also pass optional parameters to ls such as **ls -a** which list **all f
 
 ## * the wildcard parameter
 
-Also very useful is the wildcard paramter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls .txt`**.
+Also very useful is the wildcard paramter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls *.txt`**.
 
 # mkdir
 
