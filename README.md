@@ -27,7 +27,7 @@ Before we get into data science and Jupyter Notebooks, we'll need to know a tiny
 ## Cloning Learn.co lessons to your local hard drive
 One of the many useful features of the command line will be using git to clone (download) a local copy of the curriculum hosted on learn.co. This will allow you to work offline and to save changes as you work through exercises and start programming!
 
-To start, **for mac users, open the terminal application**, **for Windows, open “Git Bash”**.
+To start, **for Mac users, open the terminal application**, **for Windows, open “Git Bash”**.
 
 ## pwd
 
@@ -42,7 +42,7 @@ The next essential command is **cd** which stands for **change directory**. This
 An extraordinarly useful feature when working on the command line is tab completion. This allows you to hit the tab button to autocomplete names once you have made a unique specification.  
 
 
-For example, if you navigate to your root directory by running the command **cd**, if you're on a mac, you will probably have 2 folders within your root directory named "Downloads" and "Documents" (these are standard folder names created by default in most systems, although you may have renamed them, or your system may be different). With these, or longer folder names, it can sometimes become cumbersome to type the full folder name. instead, you can start typing the command and folder name such as **"cd Dow"** and then press **tab** to autocomplete. Like magic, the command line should complete the statement correctly to be **cd Downloads**. (Note: this will not work if you have another folder that begins with "Dow". Similarly, if you just typed **cd D** or **cd Do** followe by **tab**, the command line will not autocomplete, as the selection is not unique, because **D** or **Do** could both refer to either **Documents** or **Downloads**. Also note that these commands are case sensative, and folder capitalization much be matched exactly.
+For example, if you navigate to your root directory by running the command **cd**, if you're on a Mac, you will probably have 2 folders within your root directory named "Downloads" and "Documents" (these are standard folder names created by default in most systems, although you may have renamed them, or your system may be different). With these, or longer folder names, it can sometimes become cumbersome to type the full folder name. instead, you can start typing the command and folder name such as **"cd Dow"** and then press **tab** to autocomplete. Like magic, the command line should complete the statement correctly to be **cd Downloads**. (Note: this will not work if you have another folder that begins with "Dow". Similarly, if you just typed **cd D** or **cd Do** followe by **tab**, the command line will not autocomplete, as the selection is not unique, because **D** or **Do** could both refer to either **Documents** or **Downloads**. Also note that these commands are case sensative, and folder capitalization much be matched exactly.
 
 ## ls
 
@@ -83,7 +83,7 @@ You'll be redirected to your new personal copy of the repository:
 ## Finally: 
 * Press **cmd+L** to highlight the url bar and **cmd+c** to copy the url (whenever we use `cmd` to refer to holding down the command key on a Mac computer, on a Windows computer, hold down the control key instead)
 * Return to the terminal (you should be in your "section01" folder)
-* Type: **git clone** and paste your repo url (**cmd + v** - in windows, in git bash, to paste from the clipboard the shortcut should be `ctrl-shift-insert`)
+* Type: **git clone** and paste your repo url (**cmd + v** for Mac; for Windows, in git bash, **shift + insert**)
 * Et Voila! The repository and all of its contents will be downloaded locally to your computer!
 * Remember that we then need to **cd** into the new repository once we've downloaded it
 * Our next step is to open our Jupyter Notebook locally (**not on learn**) using the command line
@@ -106,7 +106,7 @@ Jupyter is a web application that allows someone to create and work with documen
 
 The notebook itself consists of cells. Double click on this content to see what I mean. Once we double click on a cell, we are in insert mode. This means that we are able to edit the cells, just as you would if this were a word document. We can tell that we are in insert mode because of the green border around the cell.  
 
-After entering insert mode for this cell, change some content. Don't worry about what you change as we can always undo it. We can revert our changes to a cell by making sure that we are still in insert mode and by pressing `command + z` on a mac or `control + z` on windows.
+After entering insert mode for this cell, change some content. Don't worry about what you change as we can always undo it. We can revert our changes to a cell by making sure that we are still in insert mode and by pressing `command + z` on a Mac or `control + z` on Windows.
 
 To get out of insert mode and see the effect of our changes, press `shift + enter`.
 
@@ -211,6 +211,11 @@ As you read through labs we encourage you to press shift + enter on each of the 
 
 ## Summary
 
-In this lesson, we learned about the command line, cloning github repositorites, and working with Jupyter notebooks.  We saw that in Jupyter notebooks, we can either be in insert mode or escape mode. While in insert mode, we can edit the cells and undo changes within that cell with `cmd + z` on a mac or `ctl + z` on windows. In escape mode, we can add cells with `b`, delete a cell with `x`, and undo deletion of a cell with `z`.  We can also change the type of a cell to markdown with `m` and to Python code with `y`.  
+In this lesson, we learned about the command line, cloning github repositorites, and working with Jupyter notebooks.  We saw that in Jupyter notebooks, we can either be in insert mode or escape mode. While in insert mode, we can edit the cells and undo changes within that cell with `cmd + z` on a Mac or `ctl + z` on Windows. In escape mode, we can add cells with `b`, delete a cell with `x`, and undo deletion of a cell with `z`.  We can also change the type of a cell to markdown with `m` and to Python code with `y`.  
 
 Then we saw how to work with Python code in Jupyter notebooks.  We saw that to have our code in a cell executed, we need to press `shift + enter`. If we do not do this, then our variables that we assigned in Python are not going to be recognized by Python later on in our Jupyter notebook.
+
+
+```python
+
+```
