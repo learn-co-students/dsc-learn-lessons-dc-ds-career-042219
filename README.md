@@ -54,11 +54,11 @@ You can also pass optional parameters to ls such as **ls -a** which list **all f
 
 Also very useful is the wildcard paramter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls *.txt`**.
 
-# mkdir
+## mkdir
 
 Finally, as you continue to navigate the file directory from the command line it can be useful to be able to create new folders. To do this, use the **mkdir** command, which stands for **make directory**. Try it out with **mkdir NewFolderName**. Afterwards, use the **ls** command to see that there is indeed a new folder, and if you wish, move into the new folder using the **cd** command.
 
-# Cloning GitHub repositories and Learn.co lessons
+## Cloning GitHub repositories and Learn.co lessons
 
 Now that you can navigate the file directory using the command line, you're ready to download some course materials from the web to your local environment.  
 
@@ -214,8 +214,3 @@ As you read through labs we encourage you to press shift + enter on each of the 
 In this lesson, we learned about the command line, cloning github repositorites, and working with Jupyter notebooks.  We saw that in Jupyter notebooks, we can either be in insert mode or escape mode. While in insert mode, we can edit the cells and undo changes within that cell with `cmd + z` on a Mac or `ctl + z` on Windows. In escape mode, we can add cells with `b`, delete a cell with `x`, and undo deletion of a cell with `z`.  We can also change the type of a cell to markdown with `m` and to Python code with `y`.  
 
 Then we saw how to work with Python code in Jupyter notebooks.  We saw that to have our code in a cell executed, we need to press `shift + enter`. If we do not do this, then our variables that we assigned in Python are not going to be recognized by Python later on in our Jupyter notebook.
-
-
-```python
-
-```
