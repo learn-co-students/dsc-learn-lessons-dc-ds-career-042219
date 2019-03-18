@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This lesson will give you practice with the workflow we will be using for using for the rest of the course and will give you some hands on practice with important tools that you will need to be familiar with as a professional data scientist: the command line, git, GitHub and Jupyter Notebook.
+This lesson will give you practice with the workflow we will be using for the rest of the course and will give you some hands-on practice with important tools that you will need to be familiar with as a professional data scientist: the command line, git, GitHub, and Jupyter Notebook.
 
 ## Objectives
 You will be able to:
@@ -12,9 +12,9 @@ You will be able to:
 
 ## Setting the Stage
 
-There are two types of lessons on learn - readme's where you are mainly reading text or watching videos and perhaps executing a code block or two just to see what happens. For those lessons, you don't need to know *any* of what we're teaching below. All you need to do is to read them on learn. Enjoy!
+There are two types of lessons on Learn - readme's where you are mainly reading text or watching videos and perhaps executing a code block or two just to see what happens. For those lessons, you don't need to know *any* of what we're teaching below. All you need to do is to read them on Learn. Enjoy!
 
-However, there are some lessons that require you to write code - projects and labs. Generally labs are a little smaller and better specified, allowing you to practice a specific skill in isolation (like practicing throwing the ball up without hitting it to improve your tennis serve). Generally projects come towards the end of a section and are more open ended, allowing you to bring together a range of different skills that you have learned (like playing a whole game of tennis - or at least practicing a complete serve).
+However, there are some lessons that require you to write code - projects and labs. Generally, labs are a little smaller and better specified, allowing you to practice a specific skill in isolation (like practicing throwing the ball up without hitting it to improve your tennis serve). Generally projects come towards the end of a section and are more open-ended, allowing you to bring together a range of different skills that you have learned (like playing a whole game of tennis - or at least practicing a complete serve).
 
 It's easy to tell from a lessons title if it is a project, a lab or a readme. If the title ends with " - Lab", it's a lab. If the title starts with the word "Project", it's a project. If neither of those two things is true, it's a readme!
 
@@ -22,7 +22,7 @@ It's easy to tell from a lessons title if it is a project, a lab or a readme. If
 
 ## The Command Line
 
-Before we get into data science and Jupyter Notebooks, we'll need to know a tiny bit about our command line. When conducting data science (or programming in general), it's important to get comfortable with the command line. On Mac computers, this is the terminal application. On Windows computers, we'll use "Git Bash". The command line serves as a low level interpreter through which you, the user, can send commands directly to the computer. As a computer user, you previously have probably sent commands to the computer through a graphical user interface (GUI) such as a web browser, text editor, photo editor, or any other of the myriad of computer programs now in existence. While the command line is initially daunting with its cryptic looking text, we will quickly see some of the many advantages it can have.
+Before we get into data science and Jupyter Notebooks, we'll need to know a tiny bit about our command line. When conducting data science (or programming in general), it's important to get comfortable with the command line. On Mac computers, this is the terminal application. On Windows computers, we'll use "Git Bash". The command line serves as a low-level interpreter through which you, the user, can send commands directly to the computer. As a computer user, you previously have probably sent commands to the computer through a graphical user interface (GUI) such as a web browser, text editor, photo editor, or any other of the myriad of computer programs now in existence. While the command line is initially daunting with its cryptic looking text, we will quickly see some of the many advantages it can have.
 
 ## Cloning Learn.co lessons to your local hard drive
 One of the many useful features of the command line will be using git to clone (download) a local copy of the curriculum hosted on learn.co. This will allow you to work offline and to save changes as you work through exercises and start programming!
@@ -42,21 +42,21 @@ The next essential command is **cd** which stands for **change directory**. This
 An extraordinarly useful feature when working on the command line is tab completion. This allows you to hit the tab button to autocomplete names once you have made a unique specification.  
 
 
-For example, if you navigate to your root directory by running the command **cd**, if you're on a Mac, you will probably have 2 folders within your root directory named "Downloads" and "Documents" (these are standard folder names created by default in most systems, although you may have renamed them, or your system may be different). With these, or longer folder names, it can sometimes become cumbersome to type the full folder name. instead, you can start typing the command and folder name such as **"cd Dow"** and then press **tab** to autocomplete. Like magic, the command line should complete the statement correctly to be **cd Downloads**. (Note: this will not work if you have another folder that begins with "Dow". Similarly, if you just typed **cd D** or **cd Do** followe by **tab**, the command line will not autocomplete, as the selection is not unique, because **D** or **Do** could both refer to either **Documents** or **Downloads**. Also note that these commands are case sensative, and folder capitalization much be matched exactly.
+For example, if you navigate to your root directory by running the command **cd**, if you're on a Mac, you will probably have 2 folders within your root directory named "Downloads" and "Documents" (these are standard folder names created by default in most systems, although you may have renamed them, or your system may be different). With these, or longer folder names, it can sometimes become cumbersome to type the full folder name. instead, you can start typing the command and folder name such as **"cd Dow"** and then press **tab** to autocomplete. Like magic, the command line should complete the statement correctly to be **cd Downloads**. (Note: this will not work if you have another folder that begins with "Dow". Similarly, if you just typed **cd D** or **cd Do** followed by **tab**, the command line will not autocomplete, as the selection is not unique, because **D** or **Do** could both refer to either **Documents** or **Downloads**. Also note that these commands are case sensitive, and folder capitalization much be matched exactly.
 
 ## ls
 
-Continuing with navigating the computer's hard drive, it's useful to now how to **list files**. This is done with the **ls** command, short for list.
+Continuing with navigating the computer's hard drive, it's useful to know how to **list files**. This is done with the **ls** command, short for list.
 
 You can also pass optional parameters to ls such as **ls -a** which list **all files** (including hidden files), **ls -l** which will give a **long listing** of files (including file size and last edit times) or you can pass multiple parameters simultaneously such as **ls -al** to produce a detailed listing of all files.
 
 ## * the wildcard parameter
 
-Also very useful is the wildcard paramter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls *.txt`**.
+Also very useful is the wildcard parameter. For example, if you wanted to list all files in the current working directory that begin with a, you could type **`ls a*`**. Here, the asterix (`*`) denotes anything is allowed following the a. Similarly, to list all pdf files in the current working directory we could type **`ls *.pdf`**, or to list all text files, we could type **`ls *.txt`**.
 
 ## mkdir
 
-Finally, as you continue to navigate the file directory from the command line it can be useful to be able to create new folders. To do this, use the **mkdir** command, which stands for **make directory**. Try it out with **mkdir NewFolderName**. Afterwards, use the **ls** command to see that there is indeed a new folder, and if you wish, move into the new folder using the **cd** command.
+Finally, as you continue to navigate the file directory from the command line it can be useful to be able to create new folders. To do this, use the **mkdir** command, which stands for **make directory**. Try it out with **mkdir NewFolderName**. Afterward, use the **ls** command to see that there is indeed a new folder, and if you wish, move into the new folder using the **cd** command.
 
 ## Cloning GitHub repositories and Learn.co lessons
 
@@ -68,18 +68,19 @@ Now that you can navigate the file directory using the command line, you're read
 * Return to your web browser and navigate to the lesson you want to download.
 * Click the GitHub icon
 
-<img src="Learn_Github_Logo.png">
+<img src="images/learn_github_logo.png">
 
 You'll be redirected to the associated GitHub repository like this.  
 * **Click the fork button**, as shown in order to create a copy to your personal account which you can edit and update.
-<img src="Github_Fork_Button.png">
+<img src="images/github_fork_button.png">
 
-One of two things will happen. Either it'll pop up a modal (window) and if you scroll to the bottom of it you'll see it says that you already have a fork. That is qiuite possible - learn auto-forks certain lesssons for you. If that's the case, just click on the link to view your existing fork.
+One of two things will happen. Either it'll pop up a modal (window) and if you scroll to the bottom of it you'll see it says that you already have a fork. That is quite possible - learn auto-forks certain lessons for you. If that's the case, just click on the link to view your existing fork.
 
 If you don't already have a fork, after a moment of this:
-<img src="Github_Forking_In_Progress.png" width=350>
+<img src="images/github_forking_in_progress.png" width="700">
 You'll be redirected to your new personal copy of the repository:
-<img src="Forked_Github_Page.png" width=700>
+<img src="images/forked_github_page.png" width="900">
+
 ## Finally: 
 * Press **cmd+L** to highlight the url bar and **cmd+c** to copy the url (whenever we use `cmd` to refer to holding down the command key on a Mac computer, on a Windows computer, hold down the control key instead)
 * Return to the terminal (you should be in your "section01" folder)
@@ -100,7 +101,7 @@ Second step is to click on the `index.ipynb` file which is the Jupyter Notebook 
 
 ### Background on Jupyter 
 
-Jupyter is a web application that allows someone to create and work with documents that have live code.  It's a very popular tool among data scientists, as it allows for both explanation of thinking behind code as well as the code itself.
+Jupyter is a web application that allows someone to create and work with documents that have live code.  It's a very popular tool among data scientists, as it allows for both explanations of thinking behind code as well as the code itself.
 
 ### Introduction to cells
 
@@ -128,7 +129,7 @@ If we wish to quickly add a new cell we can do so with the following steps:
 
 To delete a cell we once again should be in escape mode, and then press the `x` key.
 
-Of course, we'll want a way to undo our deletion.  From escape mode, you can press `z` to undo deletion of a cell.  Note that this is different from `cmd + z`.  Pressing `cmd + z` while in insert mode undoes any changes inside of a cell while, whether these changes be deletions or text insertions.  Pressing `z` from escape mode undoes the deletion a cell.
+Of course, we'll want a way to undo our deletion.  From escape mode, you can press `z` to undo deletion of a cell.  Note that this is different from `cmd + z`.  Pressing `cmd + z` while in insert mode undoes any changes inside of a cell while, whether these changes be deletions or text insertions.  Pressing `z` from escape mode undoes the deletion of a cell.
 
 Go to escape mode and press `x`.  This cell disappears!
 
@@ -141,9 +142,19 @@ The current cell and every other cell in this lesson has been a markdown cell, m
 Cells can also have a type of code. If we are writing in a cell that is for Python code, everything in that cell must be valid Python or we will see an error.
 
 
+
+
 ```python
 This is a python cell without valid Python so we will see an error
 ```
+
+
+      File "<ipython-input-1-4e0ec4477064>", line 1
+        This is a python cell without valid Python so we will see an error
+                       ^
+    SyntaxError: invalid syntax
+
+
 
 So, a cell must either be of type markdown or of type code, in which case all of the contents must be valid Python.  It cannot be both. We can quickly change a cell from markdown to code with some keyboard shortcuts.
 
