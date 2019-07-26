@@ -60,7 +60,13 @@ Finally, as you continue to navigate the file directory from the command line it
 
 ## Cloning GitHub repositories and Learn.co lessons
 
-Now that you can navigate the file directory using the command line, you're ready to download some course materials from the web to your local environment.  
+You have already read a little bit about GitHub and how it's used to share code. Since you can now navigate the file directory using the command line, you're ready to download some course materials from GitHub to your local environment. In practice, you will do the following:
+
+* **Fork** the course material repository: Forking is the process of making a personal copy of the Learn course materials on your own GitHub account.
+
+* **Clone** the forked course material repository: Cloning is the process of downloading a repository from Github onto your personal computer. 
+
+Don't worry if this process seems a little confusing. It will be explained in more detail soon. For now, you can just follow the steps below: 
 
 * Create a folder on your computer for your course materials and navigate into it. 
 * Then create a subfolder titled "section01" and navigate into that.
@@ -147,14 +153,6 @@ Cells can also have a type of code. If we are writing in a cell that is for Pyth
 ```python
 This is a python cell without valid Python so we will see an error
 ```
-
-
-      File "<ipython-input-1-4e0ec4477064>", line 1
-        This is a python cell without valid Python so we will see an error
-                       ^
-    SyntaxError: invalid syntax
-
-
 
 So, a cell must either be of type markdown or of type code, in which case all of the contents must be valid Python.  It cannot be both. We can quickly change a cell from markdown to code with some keyboard shortcuts.
 
