@@ -7,8 +7,10 @@ In this lesson you will practice the workflow we will be using for the rest of t
 
 ## Objectives
 You will be able to:
-* Make changes to a Jupyter Notebook and push it up to GitHub
-* Perform basic computations in a Jupyter Notebook
+* Use basic commands to navigate the command line
+* Use bash commands to create new files and folders
+* Use git clone to clone a repository
+* Perform cell operations within Jupyter Notebooks
 
 ## Setting the Stage
 
@@ -78,7 +80,7 @@ You'll be redirected to the associated GitHub repository like this.
 * **Click the fork button**, as shown in order to create a copy to your personal account which you can edit and update.
 <img src="images/github_fork_button.png">
 
-One of two things will happen. Either it'll pop up a modal (window) and if you scroll to the bottom of it you'll see it says that you already have a fork. That is quite possible - learn auto-forks certain lessons for you. If that's the case, just click on the link to view your existing fork.
+One of two things will happen. Either it'll pop up a modal (window) and if you scroll to the bottom of it you'll see it says that you already have a fork. That is quite possible - Learn auto-forks certain lessons for you. If that's the case, just click on the link to view your existing fork.
 
 If you don't already have a fork, after a moment of this:
 <img src="images/github_forking_in_progress.png" width="700">
@@ -91,17 +93,17 @@ You'll be redirected to your new personal copy of the repository:
 * Type: **git clone** and paste your repo url (**cmd + v** for Mac; for Windows, in git bash, **shift + insert**)
 * Et Voila! The repository and all of its contents will be downloaded locally to your computer!
 * Remember that you then need to **cd** into the new repository once you've downloaded it
-* The next step is to open your Jupyter Notebook locally (**not on learn**) using the command line
+* The next step is to open your Jupyter Notebook locally (**not on Learn**) using the command line
 
 ## Jupyter Notebook
 
-So, now that you understand a bit about how to use the terminal and how to clone GitHub repositories from our learn lessons, we should talk about the Jupyter Notebooks that will run most of the content in this course.
+So, now that you understand a bit about how to use the terminal and how to clone GitHub repositories from our Learn lessons, we should talk about the Jupyter Notebooks that will run most of the content in this course.
 
 Make sure to activate your conda virtual environment in your terminal first by typing `source activate learn-env`. Then type `jupyter notebook` in your command line and press enter. Next, your default browser will open a new window or tab and you will see the list of files that are in your current directory (*remember you want to be in the GitHub repo directory that we just downloaded*). 
 
 > **Note:** *To stop a Jupyter Notebook, go to your command line where the notebook is running and press the **control** key + the letter **c*** (**`ctrl`**+**`c`**).
 
-Then click on the `index.ipynb` file which is the Jupyter Notebook we will be using in this and future labs and lessons. This will open a new tab where you will see the same content from learn!
+Then click on the `index.ipynb` file which is the Jupyter Notebook we will be using in this and future labs and lessons. This will open a new tab where you will see the same content from Learn!
 
 ### Background on Jupyter 
 
